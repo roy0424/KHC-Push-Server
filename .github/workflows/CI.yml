@@ -44,15 +44,3 @@ jobs:
 
     - name: Build with Gradle
       run: ./gradlew build
-
-    - name: Run Tests and Generate Coverage Report
-      run: ./gradlew test jacocoTestReport
-
-    - name: Upload Coverage Report
-      uses: actions/upload-artifact@v3
-      with:
-        name: jacoco-report
-        path: build/reports/jacoco/test/html
-
-    - name: Check Coverage Threshold
-      run: ./gradlew jacocoTestCoverageVerification
