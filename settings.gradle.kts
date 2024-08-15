@@ -10,5 +10,4 @@ dependencyResolutionManagement {
     }
 }
 
-
 rootProject.name = "Push-Server"

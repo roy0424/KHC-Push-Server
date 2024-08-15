@@ -5,7 +5,6 @@ plugins {
     alias(libs.plugins.kotlin.spring)
     alias(libs.plugins.spring.boot)
     alias(libs.plugins.spring.dependency.management)
-
 }
 
 group = "org.example"
@@ -53,7 +52,7 @@ kotlin {
     jvmToolchain(17)
 }
 
-fun of(dependency : Provider<MinimalExternalModuleDependency>) : String{
+fun of(dependency: Provider<MinimalExternalModuleDependency>): String {
     val bom = dependency.get()
     return "${bom.group}:${bom.name}:${bom.version}"
 }
