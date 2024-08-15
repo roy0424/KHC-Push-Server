@@ -11,5 +11,4 @@ dependencyResolutionManagement {
 }
 
 
-rootProject.name = "Armeria-Spring-Templates"
-
+rootProject.name = "Push-Server"
